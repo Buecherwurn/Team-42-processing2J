@@ -113,13 +113,13 @@ public class TheApp extends PApplet {
 	  fill(0);
 	  textSize(32);
 	    String name= message;
-	    double textX= x;
+	    float textX= x;
 	    if (isCentered) {
-	      double widthText= textWidth(name);
+	      float widthText= textWidth(name);
 	      textX= (width-widthText)/2;
 	    } 
 	    int textY= y;
-	  //  text(name, textX, textY);
+	   text(name, textX, textY);
 	}
 	  
 	void drawLose() {
